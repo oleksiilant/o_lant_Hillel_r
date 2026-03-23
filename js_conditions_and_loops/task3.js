@@ -7,7 +7,7 @@ console.log('=====================')
 console.log('')
 console.log('Варіант з for:')
 
-const number1 = 8;
+const number1 = 5;
 for (let i = 1; i < 11; i++) {
     let table1 = `${number1} * ${i} = ${number1*i}`
     console.log(table1);
