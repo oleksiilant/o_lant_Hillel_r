@@ -127,3 +127,18 @@
 
 // console.log(checkAge(20, showAdultMessage, showChildMessage));
 // console.log(checkAge(12, showAdultMessage, showChildMessage));
+
+function firsFunc() {
+    let firstFunctionValue = 1;
+    return function secondFunction(){
+        return firstFunctionValue++
+    }
+}
+const secondFuncAsConst = firsFunc();
+//console.log(firsFunc()()); // - два рази
+console.log(secondFuncAsConst()); 
+console.log(secondFuncAsConst()); 
+console.log(secondFuncAsConst()); 
+console.log(secondFuncAsConst());
+console.log(secondFuncAsConst());
+console.log(secondFuncAsConst());
