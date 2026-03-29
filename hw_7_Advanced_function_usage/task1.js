@@ -9,14 +9,27 @@
 // 3. Викличте функцію handleNum і передайте в якості аргументів довільне число 
 // і дві функції які ви створили раніше
 
-function handleNum(number, perdaneParne, peredaneNeParne) {
-    return 
-}
-function handleEven(){
-    console.log("number is even");
-}
-function handleOdd(){
-    console.log("number is odd");
+function handleNum(number, peredaneParne, peredaneNeParne) {
+    if (number % 2 === 0) { 
+        peredaneParne(number);
+    } else {
+        peredaneNeParne(number);
+    }
 }
 
-handleNum(5, )
+function handleEven(num){
+    console.log(`${num} number is even `);
+    //return "number is even"
+}
+function handleOdd(num){
+    console.log(`${num} number is odd `);
+    //return "number is odd"
+}
+
+handleNum(1, handleEven, handleOdd);
+handleNum(2, handleEven, handleOdd);
+handleNum(3, handleEven, handleOdd);
+handleNum(12, handleEven, handleOdd);
+handleNum(25, handleEven, handleOdd);
+handleNum(55, handleEven, handleOdd);
+handleNum(64, handleEven, handleOdd);
