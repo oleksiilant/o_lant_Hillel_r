@@ -128,17 +128,50 @@
 // console.log(checkAge(20, showAdultMessage, showChildMessage));
 // console.log(checkAge(12, showAdultMessage, showChildMessage));
 
-function firsFunc() {
-    let firstFunctionValue = 1;
-    return function secondFunction(){
-        return firstFunctionValue++
-    }
+// function firsFunc() {
+//     let firstFunctionValue = 1;
+//     return function secondFunction(){
+//         return firstFunctionValue++
+//     }
+// }
+// const secondFuncAsConst = firsFunc();
+// //console.log(firsFunc()()); // - два рази
+// console.log(secondFuncAsConst()); 
+// console.log(secondFuncAsConst()); 
+// console.log(secondFuncAsConst()); 
+// console.log(secondFuncAsConst());
+// console.log(secondFuncAsConst());
+// console.log(secondFuncAsConst());
+
+// ////////////////////////////////////////////////////////////////////////////////////
+
+// function testRunner (testName, testLogic, testLogger) {
+//     console.log( `${testLogger} ${testName}` );
+//     if (testLogic() > 0.5) {
+//         return "passed";
+//     } else {
+//         return "failed";
+//     }
+// }
+// function testLogger() {
+//     return "test started";
+// }
+// function testLogic() {
+//     return Math.random();
+// }
+
+// console.log(testRunner('test name', testLogic, testLogger()))
+
+// ////////////////////////////////////////////////////////////////////////////////////
+
+function getSomeDataSetup(credentials) {
+    return () => {
+        return `${credentials} + data`;
+    };
 }
-const secondFuncAsConst = firsFunc();
-//console.log(firsFunc()()); // - два рази
-console.log(secondFuncAsConst()); 
-console.log(secondFuncAsConst()); 
-console.log(secondFuncAsConst()); 
-console.log(secondFuncAsConst());
-console.log(secondFuncAsConst());
-console.log(secondFuncAsConst());
+
+const logData =(data) => {
+    console.log(data);
+};
+
+logData(getSomeDataSetup(5)());
