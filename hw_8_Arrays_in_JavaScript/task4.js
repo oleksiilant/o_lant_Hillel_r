@@ -5,3 +5,13 @@
 // Cтворіть новий масив, який міститиме лише парні числа.
 // Виведіть отриманий масив парних чисел на консоль.
 
+const someMasive = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let pairNumber = []
+
+for (let i = 0; i < someMasive.length; i++) {
+    if (someMasive[i] % 2 == 0) {
+        pairNumber.push(someMasive[i]);
+    }
+}
+
+console.log(pairNumber);
