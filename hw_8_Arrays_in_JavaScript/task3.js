@@ -6,10 +6,8 @@
 // Виведіть отриману суму на консоль.
 
 const someMassive = [10, 20, 30, 40, 50];
-const initialValue = 0;
-const sumWithInitial = someMassive.reduce(
-  (accumulator, currentValue) => accumulator + currentValue,
-  initialValue,
+//const initialValue = 0;
+const sumWithInitial = someMassive.reduce((accumulator, currentValue) => { return  accumulator + currentValue }
 );
 console.log(sumWithInitial);
 
