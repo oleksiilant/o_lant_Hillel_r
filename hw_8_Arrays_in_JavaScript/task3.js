@@ -5,3 +5,11 @@
 // Використовуючи метод reduce, обчисліть суму всіх елементів масиву.
 // Виведіть отриману суму на консоль.
 
+const someMassive = [10, 20, 30, 40, 50];
+const initialValue = 0;
+const sumWithInitial = someMassive.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue,
+);
+console.log(sumWithInitial);
+
