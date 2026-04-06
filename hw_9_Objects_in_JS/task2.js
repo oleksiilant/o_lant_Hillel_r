@@ -7,10 +7,11 @@
 // Виведіть деструктуризовані змінні в консоль
 
 const book = {
-  title: "Назва книги",
-  author: "Автор книги",
-  year: "Рік видання"
+  title: "\t 1984(Nineteen Eighty-Four)",
+  author: "\t George Orwell ",
+  year: "1949"
 };
 
 const { title, author } = book;
-console.log(title, author);
+console.log(title);
+console.log(author);
