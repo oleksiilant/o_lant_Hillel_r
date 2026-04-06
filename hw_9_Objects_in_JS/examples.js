@@ -17,7 +17,7 @@ const obj = {
         return () => {
                     return this.nameOks;
         };
-    };
+    }
 };
 
 console.log(obj.getName());
