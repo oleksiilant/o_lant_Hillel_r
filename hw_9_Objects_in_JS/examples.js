@@ -1,14 +1,14 @@
-const obj = {
-    key: "value",
-    name : "Oksan",
-    getName: function() {
-        return this.name;
-    }
-}
+// const obj = {
+//     key: "value",
+//     name : "Oksan",
+//     getName: function() {
+//         return this.name;
+//     }
+// }
 
-console.log(obj.getName());
+// console.log(obj.getName());
 
-///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
 
 const obj = {
     key: "value",
