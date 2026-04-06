@@ -8,10 +8,10 @@
 // Виведіть об'єкт student в консоль.
 
 const student = {};
-
-student.firstName = "Ім'я";
-student.lastName = "Прізвище";
-student.age = 20;
+student.firstName = "Джон";
+student.lastName = "Доу";
+student.age = 22;
 student.courses = ["Математика", "Історія", "Програмування"];
+
 
 console.log(student);
