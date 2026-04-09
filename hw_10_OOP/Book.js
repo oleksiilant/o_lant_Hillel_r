@@ -13,23 +13,98 @@
 
 
 
+// const car1 = new Car("Toyota", 2020);
+// car1.showInfo();
+// class Book {
+//     constructor(title, author, year) {
+//         this.title = title;
+//         this.author = author;
+//         this.year = year;
+//     }
+//     printInfo() {
+//         console.log(`Назва: ${this.title}, Автор: ${this.author}, Рік: ${this.year}`);
+//     }
+// }
+// // class Car {
+// //     constructor(brand, year) {
+// //         this.brand = brand;
+// //         this.year = year;
+// //     }
+// //     showInfo() {
+// //         console.log(this.brand + " " + this.year);
+// //     }
+// // }
+// printInfo() {
+//     console.log(`Назва: ${this.title}`);
+//     console.log(`Автор: ${this.author}`);
+//     console.log(`Рік видання: ${this.year}`);
+// }
+
+// static findOldestBook(books) {};
+// export default Book;
 
 class Book {
-    constructor(title, author, year) {
-        this.title = title;
-        this.author = author;
-        this.year = year;
+  constructor(title, author, year) {
+    this.title = title;
+    this.author = author;
+    this.year = year;
+  }
+
+  get title() {
+    return this._title;
+  }
+
+  set title(value) {
+    if (value !== "" && value != null) {
+      this._title = value;
+    } else {
+      console.log("Назва: не може бути пустою");
     }
-    printInfo() {
-        console.log(`Назва: ${this.title}, Автор: ${this.author}, Рік: ${this.year}`);
+  }
+
+  get author() {
+    return this._author;
+  }
+
+  set author(value) {
+    if (value !== "" && value != null) {
+      this._author = value;
+    } else {
+      console.log("Автор: не може бути пустим");
     }
+  }
+
+  get year() {
+    return this._year;
+  }
+
+  set year(value) {
+    if (Number.isInteger(value) && value > 0) {
+      this._year = value;
+    } else {
+      console.log("Рік видання: має бути цілим числом більше 0");
+    }
+  }
+
+  printInfo() {
+    console.log("Назва:", this.title);
+    console.log("Автор:", this.author);
+    console.log("Рік видання:", this.year);
+  }
+
+  static findOldestBook(books) {
+    let oldestBook = books[0];
+    for (let i = 1; i < books.length; i++) {
+      if (books[i].year < oldestBook.year) {
+        oldestBook = books[i];
+      }
+    }
+    return oldestBook;
+  }
 }
 
-printInfo() {
-    console.log(`Назва: ${this.title}`);
-    console.log(`Автор: ${this.author}`);
-    console.log(`Рік видання: ${this.year}`);
-}
-
-static findOldestBook(books) {};
 export default Book;
+
+
+
+
