@@ -16,7 +16,7 @@ import Book from "./Book.js";
 import EBook from "./EBook.js";
 
 // Створюємо кілька звичайних книг
-const book1 = new Book("Дон Кіхоот з Ламаанчі", "Мігель де Сервантес", 1615);
+const book1 = new Book("Дон Кіхоот з Ламанчі", "Мігель де Сервантес", 1615);
 const book2 = new Book("Таємнича історія Біллі Міллігана", "Деніел Кіз", 1981);
 const book3 = new Book("Гаррі Поттер і смертельні реліквії", "Дж. К. Роулінг", 2007);
 
@@ -31,7 +31,7 @@ console.log("----------------------------------");
 book3.printInfo();
 console.log("----------------------------------");
 
-const ebook1 = new EBook("1984", "Джордж Орвелл", 1949, "EPUB");
+const ebook1 = new EBook("1984", "Джордж Орвел", 1949, "EPUB");
 
 console.log("Електронна книга:");
 ebook1.printInfo();
