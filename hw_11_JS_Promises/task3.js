@@ -4,6 +4,7 @@ async function Todos() {
   try {
     const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
     const todo = await response.json();
+    console.log('todos', response);
     return todo;
   } catch (error) {
     console.log('todo error', error);
@@ -14,6 +15,7 @@ async function Users() {
   try {
     const response = await fetch('https://jsonplaceholder.typicode.com/users/1');
     const user = await response.json();
+    console.log('users', response);
     return user;
   } catch (error) {
     console.log('user error', error);

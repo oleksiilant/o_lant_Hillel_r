@@ -37,7 +37,7 @@
 function Todos() {
   return fetch('https://jsonplaceholder.typicode.com/todos/1')
     .then(function(response) {
-      return response.json();
+      return response.json()
     })
     .catch(function(error) {
       console.log('todo error', error);
