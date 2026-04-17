@@ -24,4 +24,3 @@ async function Users() {
 
 const allResult = Promise.all([Todos(), Users()]);
 const raceResult = Promise.race([Todos(), Users()]);
-
