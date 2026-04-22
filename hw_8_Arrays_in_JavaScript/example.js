@@ -3,6 +3,7 @@ let num = 1;
 let num2 = num;
 num++;
 console.log(num);
+console.log(num2);
 
 console.log(myArray);
 myArray.push(5)

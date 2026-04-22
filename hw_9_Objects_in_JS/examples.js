@@ -56,7 +56,7 @@ let docs = {
   country: "Ukraine",
   innerObj: {
     id: "2",
-    getId: function (hello, hello2) {
+    getId: function (hello) {
       return hello + ' ' + this.id;
     },
   },
