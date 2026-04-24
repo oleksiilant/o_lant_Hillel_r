@@ -11,7 +11,7 @@ const retired = age < 65 && entrepreneur;
 const hasPlane = null;
 const nullExample = entrepreneur && hasPlane;
 
-let Lviv; 
+let Lviv = undefined; 
 
 console.log(user);
 console.log(age);
