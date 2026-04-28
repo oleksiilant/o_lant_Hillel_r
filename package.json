@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,17 @@
   "homepage": "https://github.com/oleksiilant/o_lant_Hillel_r#readme",
   "description": "",
   "dependencies": {
+    "axios": "^1.15.2",
     "chalk": "^5.6.2"
   },
   "devDependencies": {
     "jest": "^30.3.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/hw_14_API/**/*.js",
+      "**/__tests__/**/*.js",
+      "**/?(*.)+(spec|test).js"
+    ]
   }
 }
