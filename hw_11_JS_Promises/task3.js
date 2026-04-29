@@ -24,3 +24,6 @@ async function Users() {
 
 const allResult = Promise.all([Todos(), Users()]);
 const raceResult = Promise.race([Todos(), Users()]);
+
+allResult.then((result) => console.log('all result', result));
+raceResult.then((result) => console.log('race result', result));
