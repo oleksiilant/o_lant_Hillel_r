@@ -2,8 +2,8 @@ import { test, expect } from "@jest/globals";
 // Створіть функцію за допомогою Axios, щоб зробити запит, який містить кастомні хедери
 // та параметри URL-адреси. Напишіть тест Jest, щоб переконатися,
 // що заголовки та параметри правильно включені в запит.
-
-const axios = require("axios");
+import axios from "axios";
+//const axios = require("axios");
 
 async function customHeadersParams() {
   const url = "https://jsonplaceholder.typicode.com/posts";
