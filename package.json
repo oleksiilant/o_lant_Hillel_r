@@ -27,16 +27,20 @@
     "fs": "^0.0.1-security"
   },
   "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.3",
     "@eslint/js": "^10.0.1",
+    "@faker-js/faker": "^10.4.0",
+    "babel-jest": "^30.3.0",
     "eslint": "^10.2.1",
-    "globals": "^17.5.0",
+    "globals": "^17.6.0",
     "husky": "^9.1.7",
     "jest": "^30.3.0",
     "prettier": "^3.8.3"
   },
   "jest": {
     "testMatch": [
-      "**/hw_14_API/**/*.js",
+      "**/hw_*/**/*.js",
       "**/__tests__/**/*.js",
       "**/?(*.)+(spec|test).js"
     ]
